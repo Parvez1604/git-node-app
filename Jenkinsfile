@@ -1,8 +1,6 @@
 pipeline {
   agent any
-  docker{
-    image 'node:18'
-  }
+
   environment {
     IMAGE = "parvez1604/node-ci-app"
   }
