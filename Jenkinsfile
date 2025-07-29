@@ -2,13 +2,13 @@ pipeline {
   agent any
 
   environment {
-    IMAGE = "yourdockerhubusername/node-ci-app"
+    IMAGE = "parvez1604/node-ci-app"
   }
 
   stages {
     stage('Checkout') {
       steps {
-        git 'https://github.com/YOUR_USERNAME/node-ci-app.git'
+        git 'https://github.com/Parvez1604/git-node-app.git'
       }
     }
 
