@@ -1,13 +1,8 @@
 pipeline {
-  agent{
-    docker{
-      image 'node:lts'
-      args '-u 0:0'
-    }
-  }
+  agent any
 
   environment {
-    IMAGE = "parvez1604/node-ci-app"
+    IMAGE = "node:lts"
   }
 
   stages {
