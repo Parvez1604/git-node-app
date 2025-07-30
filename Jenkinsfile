@@ -1,9 +1,13 @@
 pipeline {
-  agent any
+  agent any 
+  tools {
+                nodejs 'Node' // Replace with the name configured in Global Tool Configurations
+            }
 
   environment {
-    IMAGE = "node:lts"
+    IMAGE = "parvez1604/node-ci-app"
   }
+
 
   stages {
     stage('Checkout') {
