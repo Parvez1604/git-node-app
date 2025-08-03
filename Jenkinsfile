@@ -6,6 +6,7 @@ pipeline {
 
   environment {
     IMAGE = "parvez1604/node-ci-app"
+    PATH= "/usr/bin:/bin:/usr/local/bin"
   }
 
 
